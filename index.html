@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./styles/index.css">
+</head>
+
+<body>
+
+  <div id="mobile-nav" class="mobile-nav">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="nav-button">Home</a>
+    <a class="nav-button">About me</a>
+    <a class="nav-button">Portfolio</a>
+    <a class="nav-button">Contact</a>
+  </div>
+
+  <div id="navbar" class="nav-container sticky">
+    <div class="item-container">
+      <a class="nav-button">Home</a>
+      <a class="nav-button">About me</a>
+      <a class="nav-button">Portfolio</a>
+      <a class="nav-button">Contact</a>
+    </div>
+  </div>
+
+  <section class="scroll-snap first">
+    <span id="mob-nav-button" onclick="openNav()">&#9776</span>
+    <div class="scroll-hint-container">
+      <span class="scroll-hint">scroll down to see more</span>
+      <i class="demo-icon icon-angle-double-down scroll-hint-icon"></i>
+    </div>
+
+  </section>
+
+  <section class="scroll-snap">
+    <div class="row">
+      <div class="col frame">
+        <div>
+          <img id="dude" src="./static/img/man.jpg"
+            style='height: 100%; width: 100%; max-height: 850px; object-fit: contain' />
+        </div>
+      </div>
+      <div class="col article">
+        <div class="header">About me</div>
+        <div class="article-body">
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+          <p class="signature">jason wood</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="secondHint" class="scroll-hint-container">
+      <span class="scroll-hint">keep scrolling. there is still more to come (nope)</span>
+      <i class="demo-icon icon-angle-double-down scroll-hint-icon"></i>
+    </div>
+
+  </section>
+
+  <script>
+    window.onscroll = function () { myFunction() };
+    const html = document.querySelector('html');
+
+    function myFunction() {
+      if (window.pageYOffset > document.documentElement.clientHeight) {
+        html.style['scroll-snap-type'] = 'none';
+      } else {
+        html.style['scroll-snap-type'] = 'y mandatory';
+      }
+    }
+
+    function openNav() {
+      document.getElementById("mobile-nav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mobile-nav").style.width = "0";
+    }
+  </script>
+
+
+</body>
+
+</html>

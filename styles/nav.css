@@ -1,0 +1,35 @@
+.nav-container {
+  z-index: 999;
+}
+
+.sticky {
+  position: fixed;
+  width: 98%;
+  left: 40px;
+  right: 10px;
+  white-space: nowrap;
+}
+
+.item-container {
+
+  opacity: .6;
+  border-bottom: 1px #6d6a66 solid;
+  display: flex;
+  align-items: stretch; /* Default */
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  white-space: nowrap;
+
+}
+
+a.nav-button {
+  color: #2c2b29;
+  padding: 20px;
+  display: block;
+  flex: 0 1 auto; /* Default */
+  text-transform: uppercase;
+}

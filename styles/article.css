@@ -1,0 +1,25 @@
+.article-body {
+  margin-top: 10%;
+}
+
+.article .header{
+  color: #2c2b29;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 45px;
+  margin-top: 10%;
+}
+
+.article p {
+  font-size: 25px;
+  text-align: left;
+  width: 75%;
+  line-height: 200%;
+}
+
+.signature {
+  color: #2c2b29;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 35px !important;
+}

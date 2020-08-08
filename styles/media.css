@@ -1,0 +1,60 @@
+@media only screen and (orientation: portrait) {
+
+  #secondHint {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: block;
+  }
+
+  #mob-nav-button {
+    display: block !important;
+  }
+
+  .col {
+    padding: 50px 0;
+    width: 50%;
+  }
+
+  #dude{
+    max-height: unset !important;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 0 !important;
+  }
+
+  .col {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .col.article {
+    width: 100% !important;
+    padding: 50px !important;
+  }
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+  img {
+    max-height: 650px !important;
+  }
+
+  .article .header{
+    margin-top: 5%;
+  }
+
+  .article-body {
+    margin-top: 0;
+  }
+
+}
